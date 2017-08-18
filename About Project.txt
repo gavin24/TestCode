@@ -1,0 +1,10 @@
+This project is basically a real time news app which allows the users to create local content themselves
+Users will be able to login using their fb accounts or email addresses.
+Stories or Posts will be made using either text or text and a photo to create a kind of news article.
+Every story will have a tag, this tag can be location or just descriptive.
+Users will be able to select what they want to see in their newsfeeds by selecting their tags in settings.
+newsfeed will be continous feed of stories from the tag with the latest first.
+Fame is the the amount of likes, shares or dislikes a story from a user gets.
+The user will be able to see a list of their stories and their fam in their profile page.
+
+The aim of this app is to get people creating news stories for their own areas or cities and to get the people around them engaged.

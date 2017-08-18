@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+
+        android:hint="Headline"
+        android:id="@+id/headlineText" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ivImage"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.17"
+        android:src="@drawable/untitled"
+        />
+
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:hint="Story"
+        android:id="@+id/storyText"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12" />
+
+    <EditText
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:id="@+id/tagsText"
+        android:hint="Tags"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.18" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:id="@+id/selectImage"
+        android:onClick="selectImage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/crateButton"
+        android:onClick="submitClick"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

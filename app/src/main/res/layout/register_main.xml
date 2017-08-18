@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal"
+        android:hint="Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/surname"
+        android:layout_gravity="center_horizontal"
+        android:hint="Surname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="registerClick"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="OR"
+        android:textSize="20sp" />
+   <!-- <com.facebook.login.widget.LoginButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3b5998"
+        android:id="@+id/buttonFb"
+        android:text="Register with facebook"
+        android:onClick="registerFacebookClick"
+        android:textAllCaps="false"
+        android:textColor="#fff" />-->
+</LinearLayout>

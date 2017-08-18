@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ivImage"
+        android:layout_below="@+id/NameText"
+        android:padding="8dp"
+        android:clickable="true"
+        android:onClick="imageViewClick"
+        android:src="@drawable/ic_person_24dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:id="@+id/NameText" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:id="@+id/likeStory"
+        android:layout_below="@+id/ivImage"
+    />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:id="@+id/likeText"
+        android:layout_below="@+id/ivImage"
+        android:layout_toRightOf="@+id/likeStory"
+        android:layout_weight="0.18" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Dislikes"
+        android:layout_below="@+id/likeStory"
+        android:id="@+id/dislikeStory"
+        android:padding="8dp"
+    />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:id="@+id/dislikeText"
+        android:layout_below="@+id/likeStory"
+        android:layout_toRightOf="@+id/dislikeStory"
+        android:layout_weight="0.18" />
+
+
+    <!---->
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Shares"
+        android:padding="8dp"
+        android:id="@+id/shareStory"
+        android:layout_below="@+id/dislikeText"
+        />
+    <!---->
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:id="@+id/shareText"
+        android:layout_toRightOf="@+id/shareStory"
+        android:layout_below="@+id/dislikeText"
+        android:layout_weight="0.40" />
+
+    <!--  -->
+<Button
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:padding="8dp"
+    android:id="@+id/stories"
+    android:onClick="storiesClick"
+    android:text="View Stories"
+    android:layout_below="@+id/shareStory"
+    android:layout_weight="0.40"/>
+</RelativeLayout>

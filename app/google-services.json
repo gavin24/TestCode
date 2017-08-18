@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "914521288584",
+    "firebase_url": "https://ispy-f7d94.firebaseio.com",
+    "project_id": "ispy-f7d94",
+    "storage_bucket": "ispy-f7d94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914521288584:android:00d5867820c6dca3",
+        "android_client_info": {
+          "package_name": "com.ackerman.j.gavin.ispy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914521288584-geb8rouoaru384r8083vnsur4h8pks6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD42PsRmS2H4PPmWbsxvxOyQFAWeBne91Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

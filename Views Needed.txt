@@ -1,0 +1,6 @@
+- login and register view
+- homescreen is a newsfeed like tumblr
+- menu button allows for tags to be set(edit,add,deleted) 1 screen
+- menu also has fame which is basically the users profile with stats
+- menu allows user to create a story(which can include a an image, text and a location).
+- anything else you can think of.

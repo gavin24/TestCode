@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:hint="Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSurname"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignRight="@+id/editTextName"
+        android:layout_alignEnd="@+id/editTextName"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName"
+        android:hint="Surname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@+id/editTextSurname"
+        android:layout_centerHorizontal="true"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:hint="Email" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/buttonRegister"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:onClick="SubmitClick"
+        android:layout_marginTop="78dp"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_alignEnd="@+id/editTextPassword" />
+</LinearLayout>

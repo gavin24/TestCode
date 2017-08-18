@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The main content view -->
+        <RelativeLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- The navigation drawer -->
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/drawerPane"
+            android:layout_gravity="start">
+
+            <!-- Profile Box -->
+
+            <RelativeLayout
+                android:id="@+id/profileBox"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/material_blue_grey_800"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_menu_dp"
+                    android:layout_marginTop="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rishabh"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="4dp"
+                        android:text="View Profile"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- List of Actions (pages) -->
+            <ListView
+                android:id="@+id/navList"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profileBox"
+                android:choiceMode="singleChoice"
+                android:background="#ffffffff" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ivImage"
+            android:layout_below="@+id/headlineText"
+            android:padding="8dp"
+          />
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:id="@+id/headlineText" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/ivImage"
+        android:padding="8dp"
+        android:text="By: "
+        android:id="@+id/ByText" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/ivImage"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/likeStory"
+        android:clickable="true"
+        android:onClick="nameClick"
+        android:id="@+id/userNameText" />
+       <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+           android:layout_below="@+id/ByText"
+        android:padding="8dp"
+
+        android:id="@+id/storyText" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/storyText"
+        android:padding="8dp"
+        android:id="@+id/tagsText" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:id="@+id/likeStory"
+        android:layout_below="@+id/tagsText"
+        android:onClick="likeClick" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:id="@+id/likeText"
+        android:layout_below="@+id/tagsText"
+        android:layout_toRightOf="@+id/likeStory"
+        android:layout_weight="0.18" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Dislike"
+        android:layout_below="@+id/likeStory"
+        android:id="@+id/dislikeStory"
+        android:padding="8dp"
+        android:onClick="dislikeClick"/>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:id="@+id/dislikeText"
+        android:layout_below="@+id/likeStory"
+        android:layout_toRightOf="@+id/dislikeStory"
+        android:layout_weight="0.18" />
+
+
+    <!---->
+    <Button
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:padding="8dp"
+        android:id="@+id/shareStory"
+        android:onClick="shareClick"
+        android:layout_below="@+id/dislikeText"
+       />
+    <!---->
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:id="@+id/shareText"
+        android:layout_toRightOf="@+id/shareStory"
+        android:layout_below="@+id/dislikeText"
+        android:layout_weight="0.40" />
+
+    <!--  -->
+
+
+ </RelativeLayout>

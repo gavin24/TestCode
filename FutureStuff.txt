@@ -1,0 +1,5 @@
+- service that users device gps to get location(location to only be typed in if manually if gps off)
+- direct sharing to fb,twitter intergration.
+- fb login intergration
+- startup view with register and login buttons - done.
+- validation on register

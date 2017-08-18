@@ -1,0 +1,6 @@
+-get crud working in all views
+-do validation
+-get newsfeed working
+-get api working
+-change interface
+-create new services
